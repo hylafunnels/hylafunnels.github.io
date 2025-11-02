@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HYLA EST Defender – Back‑Week Angebot | Premium Wasserfilter-Staubsauger & Luftreiniger</title>
+  <meta name="description" content="HYLA EST Defender: Premium Wasserfilter-Staubsauger & Luftreinigung in einem Gerät. Saubere Böden, frische Luft – ideal für Allergiker, Familien & Haustiere. Back‑Week Paket nur für kurze Zeit!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #faf7f2;           /* warm, hell */
+      --card: #fff9f2;         /* leicht getönt */
+      --ink: #2b2a28;          /* dunkles Braun/Graphit */
+      --muted: #6f665d;        /* sanftes Braun */
+      --accent: #c2a58a;       /* Sand/Beige Akzent */
+      --accent-2: #8f7a66;     /* tieferer Naturton */
+      --success: #3e7f66;      /* natürliches Grün */
+      --shadow: 0 10px 30px rgba(0,0,0,.06);
+      --radius: 18px;
+      --radius-lg: 28px;
+      --maxw: 1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
+    img{max-width:100%;height:auto;display:block}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--maxw);margin-inline:auto;padding:clamp(16px,3vw,28px)}
+    .serif{font-family:"Playfair Display",Georgia,serif}
+    .eyebrow{letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;font-size:.9rem}
+    .headline{font-size:clamp(1.8rem,3.2vw,3.2rem);line-height:1.1;margin:.5rem 0;font-weight:800}
+    .sub{color:var(--muted);font-size:clamp(1rem,1.3vw,1.1rem)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;background:var(--success);color:#fff;padding:14px 22px;border-radius:999px;font-weight:700;box-shadow:var(--shadow);transition:.2s transform ease,.2s box-shadow ease}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(62,127,102,.28)}
+    .btn--ghost{background:transparent;color:var(--success);border:2px solid var(--success)}
+    .badge{display:inline-flex;align-items:center;gap:.4rem;background:var(--card);padding:8px 12px;border-radius:999px;border:1px solid #efe7dc}
+
+    /* HERO */
+    .hero{position:relative}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(16px,3vw,32px);align-items:center}
+    .hero-card{background:linear-gradient(180deg,#fffefb, #fff8ef);padding:clamp(18px,3vw,26px);border-radius:var(--radius-lg);box-shadow:var(--shadow)}
+    .hero-media{background:#fff;border-radius:var(--radius-lg);padding:clamp(10px,2vw,16px);box-shadow:var(--shadow)}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 18px}
+    .meta .pill{background:#efe7dc;border-radius:999px;padding:8px 12px;font-weight:600;color:#6a5f54}
+
+    /* COUNTDOWN */
+    .countdown{display:flex;gap:10px;margin:16px 0 0}
+    .cd-box{background:#fff;border:1px solid #eee3d6;border-radius:14px;min-width:70px;padding:10px;text-align:center}
+    .cd-num{font-weight:800;font-size:1.6rem}
+    .cd-lbl{font-size:.75rem;color:var(--muted)}
+
+    /* STORY */
+    .section{padding:clamp(28px,5vw,64px) 0}
+    .card{background:var(--card);border:1px solid #efe7dc;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .story{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}
+    .story .copy{padding:20px}
+    .copy p{margin:.4rem 0}
+    .quote{border-left:4px solid var(--accent);padding:8px 12px;margin:10px 0;color:#51483e}
+
+    /* BENEFITS */
+    .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .benefit{background:#fff;border:1px solid #eee3d6;border-radius:16px;padding:18px}
+    .benefit h4{margin:.2rem 0;font-size:1.05rem}
+    .stat{font-weight:800}
+
+    /* FEATURES media separation */
+    .features{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center}
+
+    /* SOCIAL PROOF */
+    .testis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .testi{background:#fff;border:1px solid #eee3d6;border-radius:16px;padding:18px}
+    .stars{color:#b8946a;font-size:1rem}
+
+    /* OFFER */
+    .offer{background:linear-gradient(180deg,#fff8ef,#fffefb);border:1px solid #efe7dc;border-radius:var(--radius-lg);padding:22px;box-shadow:var(--shadow)}
+
+    /* FAQ */
+    details{background:#fff;border:1px solid #eee3d6;border-radius:14px;padding:14px}
+    details+details{margin-top:10px}
+    summary{font-weight:700;cursor:pointer}
+
+    /* CTA bar */
+    .cta-sticky{position:sticky;bottom:10px;z-index:10}
+    .cta-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#1f453a;color:#fff;border-radius:999px;padding:10px 14px;box-shadow:0 12px 28px rgba(31,69,58,.35)}
+
+    /* FOOTER */
+    footer{color:#8b8076}
+    footer a{color:inherit;text-decoration:underline}
+
+    /* RESPONSIVE */
+    @media (max-width: 960px){
+      .hero-grid{grid-template-columns:1fr}
+      .story{grid-template-columns:1fr}
+      .benefits{grid-template-columns:1fr 1fr}
+      .features{grid-template-columns:1fr}
+      .testis{grid-template-columns:1fr}
+      .cta-bar{flex-direction:column;align-items:stretch}
+    }
+    @media (max-width: 560px){
+      .benefits{grid-template-columns:1fr}
+      .headline{font-size:1.9rem}
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap" aria-label="Topbar">
+    <div style="display:flex;align-items:center;gap:14px;justify-content:space-between">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="badge"><strong>HYLA</strong><span class="muted">EST Defender</span></div>
+        <span class="eyebrow">Clean Living trifft Technik</span>
+      </div>
+      <a href="#angebot" class="btn" aria-label="Zum Angebot">Jetzt Back‑Week Paket</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="wrap hero" id="hero">
+    <div class="hero-grid">
+      <div class="hero-card">
+        <div class="eyebrow">Back‑Week Spezial</div>
+        <h1 class="headline serif">Boden & Luft. Ein Gerät.<br/>Reine Luft zum Durchatmen.</h1>
+        <p class="sub">HYLA EST Defender – Premium‑Wasserfilter‑Staubsauger & Raumluftreinigung in einem. Ideal für Allergiker, Familien und Haustier‑Haushalte.</p>
+        <div class="meta">
+          <span class="pill">Wasser statt Filterbeutel</span>
+          <span class="pill">Konstante Saugkraft</span>
+          <span class="pill">Luftreinigung inklusive</span>
+          <span class="pill">730 W effizient</span>
+        </div>
+        <div>
+          <a href="#angebot" class="btn" aria-label="Back-Week Paket sichern">Jetzt exklusiv sichern</a>
+          <a href="#benefits" class="btn btn--ghost" aria-label="Mehr erfahren">Mehr erfahren</a>
+        </div>
+        <div class="countdown" aria-label="Countdown bis Angebotsende">
+          <div class="cd-box"><div class="cd-num" id="cd-days">00</div><div class="cd-lbl">Tage</div></div>
+          <div class="cd-box"><div class="cd-num" id="cd-hours">00</div><div class="cd-lbl">Std</div></div>
+          <div class="cd-box"><div class="cd-num" id="cd-min">00</div><div class="cd-lbl">Min</div></div>
+          <div class="cd-box"><div class="cd-num" id="cd-sec">00</div><div class="cd-lbl">Sek</div></div>
+        </div>
+        <small class="sub">Nur für kurze Zeit: Back‑Week Paket mit Premium‑Zubehör.</small>
+      </div>
+      <div class="hero-media" aria-label="Produktbild HYLA EST Defender">
+        <!-- PRODUKTBILD (klar getrennt) -->
+        <img src="https://hyla-germany.de/img/EST-front_gallery.jpg" alt="HYLA EST Defender Produktansicht vorn" loading="eager" />
+      </div>
+    </div>
+    <div class="cta-sticky wrap">
+      <div class="cta-bar">
+        <span class="eyebrow" style="color:#dcd3c9">Nur diese Woche • Limitierte Stückzahl</span>
+        <a href="#angebot" class="btn" aria-label="Jetzt zum Angebot">Zum Angebot</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY: Ausgangslage → Konflikt → Lösung → Transformation -->
+  <section class="wrap section" id="story">
+    <div class="story card">
+      <div class="copy">
+        <div class="eyebrow">Story</div>
+        <h2 class="serif" style="margin:.2rem 0">„Staub. Allergien. Wir hatten genug.“</h2>
+        <p class="quote">Morgens: Staub wirbelt auf – Reinigung fühlt sich wie täglicher Kampf an.</p>
+        <p>Ich wollte nicht nur saugen – ich wollte atmen.</p>
+        <p>Dann kam HYLA. Boden & Luft in einem Gerät.</p>
+        <p>Wasser statt Filterbeutel – echte Technik, echte Freiheit.</p>
+        <p>Nach wenigen Tagen: spürbar anders – klarer Boden, frischere Luft.</p>
+        <p>Meine Kinder spielen barfuß. Ich weiß, die Luft ist sauber.</p>
+        <p>Ein Gerät, das Verantwortung übernimmt – für Umwelt, Gesundheit, Zuhause.</p>
+        <p><strong>Back‑Week Angebot:</strong> Jetzt ist der Moment. Jetzt ist die Entscheidung.</p>
+      </div>
+      <div>
+        <!-- ANWENDUNGSBILDER (separat von Produktbildern) -->
+        <img src="https://hyla-germany.de/app-assets/images/uploads/2020/09/DSCF1928.jpg" alt="HYLA Anwendung – Teppichreinigung" />
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="story card">
+      <div>
+        <!-- weiteres Anwendungsbild -->
+        <img src="https://hyla-germany.de/app-assets/images/uploads/2020/09/DSCF2113.jpg" alt="HYLA Anwendung – Polster & Sofa" />
+      </div>
+      <div class="copy">
+        <div class="eyebrow">Konflikt → Lösung</div>
+        <p>Allergene, Tierhaare, Feinstaub – vieles bleibt in herkömmlichen Beutel‑Systemen.</p>
+        <p><strong>HYLA bindet Partikel im Wasser.</strong> Keine Beutel, kein Leistungsabfall.</p>
+        <p>Raumluftreinigung beim Saugen inklusive – Staub, Allergene, Gerüche werden im Wasser gebunden.</p>
+        <p>730 W effizient – starke Leistung bei geringem Verbrauch.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="story card">
+      <div class="copy">
+        <div class="eyebrow">Technik trifft Wohlbefinden</div>
+        <p><strong>HYLA Hygiene‑Konzept:</strong> Eines der gesündesten Raumreinigungssysteme – entwickelt für bessere Luftqualität im Alltag.</p>
+        <p><strong>Neue HYLA DEFENDER Tecnologia:</strong> Hochleistungs‑Separator mit bis zu <span class="stat">280 km/h</span> – für konstanten Luftstrom und effiziente Bindung im Wasser.</p>
+      </div>
+      <div>
+        <!-- Produkt-Detailbild (separater Bereich) -->
+        <img src="https://hyla-germany.de/app-assets/images/uploads/2017/03/Motorkopf.jpg" alt="HYLA Motorkopf Detail – Separator" />
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS & TECHNICALS -->
+  <section class="wrap section" id="benefits" aria-label="Vorteile & Fakten">
+    <div class="features">
+      <div>
+        <h2 class="serif">Vorteile auf einen Blick</h2>
+        <div class="benefits">
+          <div class="benefit">
+            <h4>Wasserfilter statt Papier</h4>
+            <p>Konstante Saugkraft & saubere Abluft – ohne verstopfte Beutel.</p>
+          </div>
+          <div class="benefit">
+            <h4>Luftreinigung integriert</h4>
+            <p>Staub, Allergene & Gerüche werden im Wasser gebunden.</p>
+          </div>
+          <div class="benefit">
+            <h4>Nachhaltig & wirtschaftlich</h4>
+            <p>Keine Beutel, weniger Abfall und effizienter Betrieb (nur <strong>730 W</strong>).</p>
+          </div>
+          <div class="benefit">
+            <h4>Hygiene‑Konzept</h4>
+            <p>Entwickelt für hohe Ansprüche von Allergikern, Familien & Haustier‑Haushalten.</p>
+          </div>
+          <div class="benefit">
+            <h4>DEFENDER‑Separator</h4>
+            <p>Technologie‑Highlight mit bis zu <strong>280 km/h</strong> Luftstrom am Separator.</p>
+          </div>
+          <div class="benefit">
+            <h4>Vielseitig</h4>
+            <p>Böden, Teppiche, Polster <em>und</em> Raumluft – ein System, viele Anwendungen.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="padding:16px">
+        <h3 class="serif" style="margin:.2rem 0">Für wen geeignet?</h3>
+        <ul>
+          <li>Allergiker & Asthmatiker mit hohen Hygiene‑Ansprüchen</li>
+          <li>Familien mit Kindern – saubere Flächen & frische Luft</li>
+          <li>Haushalte mit Haustieren – Tierhaare & Gerüche im Griff</li>
+          <li>Premium‑Haushalte mit Fokus auf Gesundheit & Nachhaltigkeit</li>
+        </ul>
+        <img src="https://hyla-germany.de/app-assets/images/uploads/2020/09/DSCF1800.jpg" alt="HYLA Anwendung – Luftreinigung im Wohnraum" style="border-radius:12px;margin-top:10px" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="wrap section" aria-label="Erfahrungen & Bewertungen">
+    <div class="eyebrow">Erfahrungsberichte</div>
+    <h2 class="serif">Warum Haushalte zu HYLA wechseln</h2>
+    <div class="testis">
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p><strong>„Allergiefreundlich spürbar“</strong></p>
+        <p>Schon nach der ersten Woche weniger Niesanfälle. Die Luft wirkt sauberer – und das Bodenbild ist sichtbar besser.</p>
+        <small>— Elena K., Familie mit 2 Kindern</small>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p><strong>„Tierhaare? Kein Thema mehr“</strong></p>
+        <p>Hund & Katze verlieren viel – HYLA bindet alles im Wasser. Gerüche sind deutlich reduziert.</p>
+        <small>— Marco S., Haustier‑Haushalt</small>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p><strong>„Ein Gerät, das Verantwortung übernimmt“</strong></p>
+        <p>Kein Beutel‑Müll, konstante Leistung. Genau das, was wir gesucht haben.</p>
+        <small>— Dr. A. Weber</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFER & COUNTDOWN -->
+  <section class="wrap section" id="angebot">
+    <div class="offer">
+      <div class="eyebrow">Back‑Week Angebot</div>
+      <h2 class="serif">HYLA EST Defender + Premium‑Zubehör</h2>
+      <p>Nur für kurze Zeit im Paket zum Sonderpreis. Ideal für den direkten Einstieg inkl. Bodendüse, Polsteraufsatz & Luftreinigungs‑Modus.</p>
+      <div class="countdown" aria-label="Countdown Angebot">
+        <div class="cd-box"><div class="cd-num" id="cd2-days">00</div><div class="cd-lbl">Tage</div></div>
+        <div class="cd-box"><div class="cd-num" id="cd2-hours">00</div><div class="cd-lbl">Std</div></div>
+        <div class="cd-box"><div class="cd-num" id="cd2-min">00</div><div class="cd-lbl">Min</div></div>
+        <div class="cd-box"><div class="cd-num" id="cd2-sec">00</div><div class="cd-lbl">Sek</div></div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+        <a href="#checkout" class="btn" aria-label="Direkt kaufen">Direkt kaufen</a>
+        <a href="#upsell" class="btn btn--ghost" aria-label="Zubehör anzeigen">Optionales Zubehör</a>
+      </div>
+      <small class="sub">Begrenzte Stückzahl. Angebot endet automatisch.</small>
+    </div>
+  </section>
+
+  <!-- FAQ & Einwände -->
+  <section class="wrap section" aria-label="FAQ & Einwände">
+    <div class="eyebrow">FAQ & Einwände</div>
+    <h2 class="serif">Häufige Fragen</h2>
+    <details>
+      <summary>Ist HYLA lauter oder schwerer als Standard‑Staubsauger?</summary>
+      <p>Das System ist leistungsstark und kann subjektiv kräftiger wirken. Der Wasserbehälter bringt Gewicht – dafür erhalten Sie konstante Saugkraft, Luftreinigung und verzichten auf Beutel.</p>
+    </details>
+    <details>
+      <summary>Wie aufwendig ist die Pflege?</summary>
+      <p>Nach dem Saugen Wasser ausleeren, kurz ausspülen – fertig. Kein Filterwechsel, keine Beutel.</p>
+    </details>
+    <details>
+      <summary>Hilft das bei Allergien?</summary>
+      <p>Partikel werden im Wasser gebunden; viele Nutzer berichten über spürbar bessere Luft. Bei medizinischen Fragen konsultieren Sie bitte Ihren Arzt.</p>
+    </details>
+    <details>
+      <summary>Wie effizient ist das Gerät?</summary>
+      <p>Hohe Reinigungsleistung bei nur <strong>730 W</strong> Leistungsaufnahme.</p>
+    </details>
+  </section>
+
+  <!-- CHECKOUT / UPSELL Platzhalter -->
+  <section class="wrap section" id="checkout">
+    <div class="card" style="padding:16px">
+      <h2 class="serif">Direktkauf</h2>
+      <p>Wählen Sie Ihre bevorzugte Zahlungsart im nächsten Schritt.</p>
+      <a class="btn" href="#" aria-label="Zur Kasse">Zur Kasse</a>
+    </div>
+  </section>
+
+  <section class="wrap section" id="upsell">
+    <div class="card" style="padding:16px">
+      <h2 class="serif">Optionales Zubehör</h2>
+      <ul>
+        <li>Feinfilter‑Düse für schwer zugängliche Bereiche</li>
+        <li>Turbo‑Bürste für Tierhaare</li>
+        <li>Parkett‑Düse für empfindliche Böden</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="wrap section">
+    <hr style="border:none;border-top:1px solid #efe7dc;margin-bottom:16px"/>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;align-items:center">
+      <div>
+        <strong>HYLA</strong> – Premium Raum‑ & Luftreinigungssystem
+        <div class="sub">© <span id="year"></span> HYLA – Alle Rechte vorbehalten.</div>
+      </div>
+      <nav style="display:flex;gap:12px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+        <a href="#hero">Nach oben ↑</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- JSON‑LD (optional) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "HYLA EST Defender",
+    "description": "Premium Wasserfilter-Staubsauger & Raumluftreiniger in einem Gerät.",
+    "image": [
+      "https://hyla-germany.de/img/EST-front_gallery.jpg",
+      "https://hyla-germany.de/app-assets/images/uploads/2017/03/Motorkopf.jpg"
+    ],
+    "brand": {"@type":"Brand","name":"HYLA"}
+  }
+  </script>
+
+  <script>
+    // Jahreszahl im Footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Countdown (Back‑Week Ende festlegen – Europas/Berlin Zeitzone anpeilen)
+    // Setze das Ende auf Sonntag, 9. Nov 2025 23:59:59 (CET)
+    const endISO = '2025-11-09T23:59:59+01:00';
+
+    function runCountdown(endDate, ids){
+      const $d = document.getElementById(ids.d);
+      const $h = document.getElementById(ids.h);
+      const $m = document.getElementById(ids.m);
+      const $s = document.getElementById(ids.s);
+      function tick(){
+        const now = new Date();
+        const end = new Date(endDate);
+        const diff = end - now;
+        if(diff <= 0){
+          $d.textContent=$h.textContent=$m.textContent=$s.textContent='00';
+          return; // stop at 0
+        }
+        const sec = Math.floor(diff/1000);
+        const days = Math.floor(sec/86400);
+        const hours = Math.floor((sec%86400)/3600);
+        const mins = Math.floor((sec%3600)/60);
+        const secs = sec%60;
+        $d.textContent = String(days).padStart(2,'0');
+        $h.textContent = String(hours).padStart(2,'0');
+        $m.textContent = String(mins).padStart(2,'0');
+        $s.textContent = String(secs).padStart(2,'0');
+        requestAnimationFrame(()=>setTimeout(tick, 1000));
+      }
+      tick();
+    }
+
+    runCountdown(endISO, {d:'cd-days',h:'cd-hours',m:'cd-min',s:'cd-sec'});
+    runCountdown(endISO, {d:'cd2-days',h:'cd2-hours',m:'cd2-min',s:'cd2-sec'});
+  </script>
+</body>
+</html>
